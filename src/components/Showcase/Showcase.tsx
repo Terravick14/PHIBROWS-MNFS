@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "../../hooks/useGSAP";
+import AuroraBackground from "../ui/aurora-background";
 
 const IMAGES = [
   { src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85", label: "Microblading", span: "row-span-2" },
@@ -27,8 +28,14 @@ export default function Showcase() {
   }, []);
 
   return (
-    <section id="resultados" ref={scope} className="bg-noir py-28 lg:py-36">
-      <div className="shell">
+    <section id="resultados" ref={scope} className="relative bg-noir py-28 lg:py-36 overflow-hidden">
+
+      {/* Aurora decorative background */}
+      <div className="absolute inset-0">
+        <AuroraBackground starCount={40} pulseDuration={12} />
+      </div>
+
+      <div className="shell relative z-10">
 
         {/* Header */}
         <div className="mb-14 text-center">

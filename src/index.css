@@ -20,6 +20,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* Reserved for future grain texture */
 
+/* Aurora pulse keyframe */
+@keyframes aurora-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%       { opacity: 0.85; transform: scale(1.04); }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #0A0806; }
