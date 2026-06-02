@@ -58,7 +58,7 @@ export default function SocialProof() {
       {/* Background image with opacity */}
       <div className="pointer-events-none absolute inset-0">
         <img
-          src="https://res.cloudinary.com/dddjqjtbk/image/upload/v1780354751/ChatGPT_Image_1_jun_2026_15_23_50_snfuyw.png"
+          src="https://res.cloudinary.com/dddjqjtbk/image/upload/v1780376606/ChatGPT_Image_1_jun_2026_21_57_17_ra3g6l.png"
           alt=""
           className="h-full w-full object-contain object-center"
           style={{ opacity: 0.22 }}
