@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "../../hooks/useGSAP";
-import { GradientMesh } from "../ui/gradient-mesh";
+import AmbientAurora from "../ui/ambient-aurora";
 
 const IMAGES = [
   { src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85", label: "Microblading", span: "row-span-2" },
@@ -30,19 +30,10 @@ export default function Showcase() {
   return (
     <section id="resultados" ref={scope} className="relative bg-noir py-28 lg:py-36 overflow-hidden">
 
-      {/* GradientMesh WebGL background */}
-      <div className="absolute inset-0" style={{ opacity: 0.55 }}>
-        <GradientMesh
-          colors={["#3b2a8d", "#C9A84C", "#f75092"]}
-          distortion={5}
-          swirl={0.4}
-          speed={0.6}
-          waveAmp={0.08}
-          grain={0.04}
-        />
-      </div>
-      {/* Dark overlay to keep gallery images readable */}
-      <div className="absolute inset-0 bg-noir/55" />
+      {/* Ambient aurora canvas background */}
+      <AmbientAurora opacity={0.7} />
+      {/* Dark overlay so gallery images stay readable */}
+      <div className="absolute inset-0 bg-noir/60" />
 
       <div className="shell relative z-10">
 
