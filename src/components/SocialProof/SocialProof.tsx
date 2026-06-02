@@ -54,7 +54,7 @@ export default function SocialProof() {
   const q = QUOTES[idx];
 
   return (
-    <section ref={scope} className="relative overflow-hidden bg-surface py-28 lg:py-36">
+    <section ref={scope} className="relative overflow-hidden bg-black py-28 lg:py-36">
       {/* Background image with opacity */}
       <div className="pointer-events-none absolute inset-0">
         <img
