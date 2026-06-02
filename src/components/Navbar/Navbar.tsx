@@ -36,13 +36,13 @@ export default function Navbar() {
           scrolled || open ? "bg-noir/95 backdrop-blur-xl" : "bg-transparent"
         }`}
       >
-        <div className="shell flex h-16 items-center justify-between sm:h-20">
+        <div className="shell flex h-20 items-center justify-between sm:h-24">
           {/* Logo */}
           <a href="#inicio" className="flex items-center" onClick={() => setOpen(false)}>
             <img
               src="https://res.cloudinary.com/dddjqjtbk/image/upload/v1780354751/ChatGPT_Image_1_jun_2026_15_23_50_snfuyw.png"
               alt="MNFS - PhiBrows by Socorro Cota Artist"
-              className="h-16 w-auto max-w-[180px] object-contain sm:h-20"
+              className="h-20 w-auto max-w-[220px] object-contain sm:h-24"
               style={{ filter: "drop-shadow(0 0 14px rgba(201,168,76,0.4))" }}
             />
           </a>
